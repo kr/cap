@@ -5,7 +5,7 @@ caps
     Lists the capability names known to this tool.
 
 bound cap args...
-    Removes a capability from the capability bounding set of its
-    process, then execs the args.
+    Removes a capability from the bounding set of its process,
+    then execs the args.
 
 See man capabilities for more info.
