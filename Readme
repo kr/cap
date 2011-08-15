@@ -1,0 +1,11 @@
+This repo contains commands for manipulating linux capabilities.
+There are two commands:
+
+caps
+    Lists the capability names known to this tool.
+
+bound cap args...
+    Removes a capability from the capability bounding set of its
+    process, then execs the args.
+
+See man capabilities for more info.
