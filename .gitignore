@@ -1,3 +1,4 @@
 *.o
 bound
+inherit
 caps
