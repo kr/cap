@@ -1,10 +1,12 @@
 CFLAGS += -Wall -Werror
 
-all: bound inherit caps
+all: bound inherit uninherit caps
 
 bound: bound.o list.o
 
 inherit: inherit.o list.o
+
+uninherit: uninherit.o list.o
 
 caps: caps.o list.o
 
