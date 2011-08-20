@@ -1,17 +1,16 @@
 CFLAGS += -Wall -Werror
+TARG=\
+	caps\
+	bound\
+	inherit\
+	uninherit\
 
-all: bound inherit uninherit caps
+all: $(TARG)
 
-bound: bound.o list.o
-
-inherit: inherit.o list.o
-
-uninherit: uninherit.o list.o
-
-caps: caps.o list.o
+$(TARG): list.o
 
 list.c: gen.sh
 	./gen.sh >$@
 
 clean:
-	rm -f *.o bound caps
+	rm -f *.o list.c $(TARG)

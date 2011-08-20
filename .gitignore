@@ -1,4 +1,5 @@
 *.o
+list.c
 bound
 inherit
 uninherit
